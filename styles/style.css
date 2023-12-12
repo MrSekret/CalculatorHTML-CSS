@@ -1,0 +1,49 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.calculator__panel {
+    background-color: #191919;
+    padding: 0px 25px 0px 280px;
+}
+.calculator__panel_value {
+    padding: 40px;
+}
+.calculator__panel-actions {
+    padding: 40px 25px;
+    background-color: #1a1a1a;
+}
+.calculator__panel-actions_first-line,
+.calculator__panel-actions_second-line,
+.calculator__panel-actions_third-line,
+.calculator__panel-actions_fourth-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    padding: 40px;
+}
+.division span{
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-60deg);
+}
+.calculator__panel-actions_second-line {
+}
+.multiplication {
+}
+.calculator__panel-actions_third-line {
+}
+.subtraction {
+}
+.calculator__panel-actions_fourth-line {
+}
+.equals {
+}
+.addition {
+}
