@@ -9,35 +9,40 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="calculator__panel">
-            <div class="calculator__panel_value">0</div>
+        <div class="calculator__title">
+            <a href="#" class="calculator__title_burger"><img src="images/burger.svg" alt="#" class="calculator__title_burger-img"></a>
+            <h1 class="calculator__title_text">Calc</h1>
         </div>
-        <div class="calculator__panel-actions">
-            <div class="calculator__panel-actions_first-line">
-                <div class="calculator__panel-actions_first-line button">7</div>
-                <div class="calculator__panel-actions_first-line button">8</div>
-                <div class="calculator__panel-actions_first-line button">9</div>
-                <div class="calculator__panel-actions_first-line button division"><span></span></div>
-            </div>
-            <div class="calculator__panel-actions_second-line">
-                <div class="calculator__panel-actions_second-line button">4</div>
-                <div class="calculator__panel-actions_second-line button">5</div>
-                <div class="calculator__panel-actions_second-line button">6</div>
-                <div class="calculator__panel-actions_second-line button multiplication"><span></span><span></span></div>
-            </div>
-            <div class="calculator__panel-actions_third-line">
-                <div class="calculator__panel-actions_third-line button">1</div>
-                <div class="calculator__panel-actions_third-line button">2</div>
-                <div class="calculator__panel-actions_third-line button">3</div>
-                <div class="calculator__panel-actions_third-line button subtraction"><span></span></div>
-            </div>
-            <div class="calculator__panel-actions_fourth-line">
-                <div class="calculator__panel-actions_fourth-line button">.</div>
-                <div class="calculator__panel-actions_fourth-linebutton">0</div>
-                <div class="calculator__panel-actions_fourth-line button equals"><span></span><span></span></div>
-                <div class="calculator__panel-actions_fourth-line button addition"><span></span></div>
-            </div>
-        </div>
+        <div class="calculator__panel"></div>
+        <form class="calculator__panel-actions" name="calc" action="">
+            <input type="text" readonly name="txt" onClick="document.calculator.ans.value+='1'" class="display">
+
+            <span class="q-button" ></span>
+            <span class="q-button" ></span>
+            <span class="q-button q-ce" onClick="document.calc.txt.value=''"><img src="images/CE.svg" alt="" class="ce-img"></span>
+            <span class="q-button q-division" onClick="calc.txt.value+='/'"><img src="images/Delit.svg" alt="" class="division-img"></span>
+
+            <span class="q-button" onClick="calc.txt.value+='7'">7</span>
+            <span class="q-button" onClick="calc.txt.value+='8'">8</span>
+            <span class="q-button" onClick="calc.txt.value+='9'">9</span>
+            <span class="q-button q-multiplication" onClick="calc.txt.value+='*'"><img src="images/Ymnozit.svg" alt="" class="multiplication-img"></span>
+
+            <span class="q-button" onClick="calc.txt.value+='4'">4</span>
+            <span class="q-button" onClick="calc.txt.value+='5'">5</span>
+            <span class="q-button" onClick="calc.txt.value+='6'">6</span>
+            <span class="q-button q-minus" onClick="calc.txt.value+='-'"><img src="images/minus.svg" alt="" class="deductions-img"></span>
+            
+            <span class="q-button" onClick="calc.txt.value+='1'">1</span>
+            <span class="q-button" onClick="calc.txt.value+='2'">2</span>
+            <span class="q-button" onClick="calc.txt.value+='3'">3</span>
+            <span class="q-button q-plus" onClick="calc.txt.value+='+'"><img src="images/plus.svg" alt="" class="addition-img"></span>
+
+            <span class="q-button" ></span>
+            <span class="q-button" onClick="calc.txt.value+='0'">0</span>
+            <span class="q-button q-dot" onClick="calc.txt.value+='.'"><img src="images/dot.svg" alt="" class="dot-img"></span>
+            <span class="q-button q-equals" onClick="document.calc.txt.value=eval(calc.txt.value)"><img src="images/ravno.svg" alt="" class="equals-img"></span>
+            
+        </в>
     </div>
 </body>
 </html>
